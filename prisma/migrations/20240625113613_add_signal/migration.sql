@@ -1,0 +1,7 @@
+-- CreateTable
+CREATE TABLE "Signal" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "pair" TEXT NOT NULL,
+    "action" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

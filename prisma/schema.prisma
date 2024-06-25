@@ -1,0 +1,35 @@
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          Int      @id @default(autoincrement())
+  email       String   @unique
+  email2      String?  @unique
+  email3      String?  @unique
+  email4      String?  @unique
+  exp_email   DateTime
+  exp_email2  DateTime?
+  exp_email3  DateTime?
+  exp_email4  DateTime?
+  password    String
+  fname       String
+  lname       String
+  line_id     String?
+  tel         String?
+  status      String   @default("1")
+}
+
+model Signal {
+  id        Int      @id @default(autoincrement())
+  Alert     String
+  Signal    String
+  createdAt DateTime @default(now())
+}

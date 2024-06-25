@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "User" ADD COLUMN "exp_email" DATETIME;
+ALTER TABLE "User" ADD COLUMN "exp_email2" DATETIME;
+ALTER TABLE "User" ADD COLUMN "exp_email3" DATETIME;
+ALTER TABLE "User" ADD COLUMN "exp_email4" DATETIME;
